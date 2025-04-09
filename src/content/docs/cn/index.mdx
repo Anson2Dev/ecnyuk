@@ -1,0 +1,48 @@
+---
+title: 数字人民币使用指南
+description: Get started building your docs site with Starlight.
+template: splash
+hero:
+  tagline: 我们讨论的是数字人民币的知识
+  image:
+    file: ../../../assets/ecny_logo.svg
+  actions:
+    - text: 开始阅读
+      link: guides/example/
+      icon: right-arrow
+---
+
+import { Icon, Card, CardGrid, LinkCard } from '@astrojs/starlight/components';
+
+
+## Next steps
+
+<CardGrid>
+	<LinkCard
+		title="测试"
+		href="/"
+		description='关于数字人民币的基础知识' />
+
+	<Card title="数字人民币知识" icon="open-book">
+		<Icon name="star" color="goldenrod" size="2rem" />关于数字人民币的基础知识
+	</Card>
+	<Card title="服务网点" icon="magnifier">
+		Add Markdown or MDX files to `src/content/docs` to create new pages.
+	</Card>
+	<Card title="常见问题" icon="information">
+		Edit your `sidebar` and other config in `astro.config.mjs`.
+	</Card>
+	<Card title="发现..." icon="rocket">
+		Learn more in [the Starlight Docs](https://starlight.astro.build/).
+	</Card>
+</CardGrid>
+
+<footer class="footer">
+  <div class="footer-content">
+    <div class="footer-copyright">
+      © {new Date().getFullYear()} <a href="https://ecny.uk">ECNY.UK</a> | Made with ❤️ by Anson
+    </div>
+  </div>
+</footer>
+
+

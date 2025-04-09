@@ -1,0 +1,30 @@
+  .footer {
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+    color: var(--sl-color-gray-2);
+  }
+
+  .footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    text-align: center;
+  }
+
+  .footer-links {
+    margin-bottom: 1rem;
+  }
+
+  .footer-links a {
+    margin: 0 1rem;
+    color: var(--sl-color-gray-2);
+    text-decoration: none;
+  }
+
+  .footer-links a:hover {
+    color: var(--sl-color-white);
+  }
+
+  .footer-copyright {
+    font-size: 0.9rem;
+  }
