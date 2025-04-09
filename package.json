@@ -13,6 +13,7 @@
     "@astrojs/cloudflare": "^12.4.0",
     "@astrojs/starlight": "^0.33.0",
     "astro": "^5.5.3",
+    "astro-webmanifest": "^1.0.0",
     "sharp": "^0.32.5",
     "starlight-theme-catppuccin": "^2.0.0"
   }
