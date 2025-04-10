@@ -15,7 +15,7 @@ export default defineConfig({
         "zh-CN": "数字人民币必读必知",
       },
       favicon: "/favicon.svg",
-      
+
       // i18n
       defaultLocale: "root",
       locales: {
@@ -39,21 +39,77 @@ export default defineConfig({
           items: [
             // Each item here is one entry in the navigation menu.
             {
-              label: "Example Guide",
-              slug: "guides/example",
+              label: "What is e-CNY?",
+              slug: "guides/whatisecny",
               translations: {
-                "zh-CN": "快速指南",
+                "zh-CN": "什么是数字人民币？",
               },
             },
+            {
+              label: "Register ECNY",
+              slug: "guides/registerecny",
+              translations: {
+                "zh-CN": "注册",
+              },
+            },
+            {
+              label: "topup",
+              slug: "guides/topup",
+              translations: {
+                "zh-CN": "充值",
+              },
+            },
+            {
+              label: "Payments",
+              translations: {
+                "zh-CN": "支付",
+              },
+              autogenerate: { directory: "guides/payments" },
+            },
+            {
+              label: "Transactions",
+              translations: {
+                "zh-CN": "转账",
+              },
+              slug: "guides/transactions",
+            },
+            {
+              label: "Withdrawals",
+              translations: {
+                "zh-CN": "提现",
+              },
+              slug: "guides/withdrawals",
+            }
           ],
         },
         {
-          label: "Reference",
+          label: "Introduction",
           translations: {
-            "zh-CN": "科普",
+            "zh-CN": "基础介绍",
           },
-          autogenerate: { directory: "reference" },
+          autogenerate: { directory: "intro" },
         },
+        {
+          label: "Application Scenarios",
+          translations: {
+            "zh-CN": "应用场景",
+          },
+          autogenerate: { directory: "appscn" },
+        },
+        {
+          label: "FAQ",
+          translations: {
+            "zh-CN": "常见问题",
+          },
+          autogenerate: { directory: "faq" },
+        },
+        {
+          label: "Supporter",
+          translations: {
+            "zh-CN": "贡献及赞助",
+          },
+          slug: "supporter",
+        }
       ],
       // 自定义样式
       customCss: ["./src/styles/custom.css"],
@@ -69,12 +125,10 @@ export default defineConfig({
         { icon: "tiktok", label: "TikTok", href: "https://tiktok.com/" },
       ],
     }),
-    webmanifest(
-      {
-        name: "ECNY.uk",
-		icon: "/favicon.svg",
-      }
-	),
+    webmanifest({
+      name: "ECNY.uk",
+      icon: "/favicon.svg",
+    }),
   ],
   output: "server",
   adapter: cloudflare({ imageService: "compile" }),
