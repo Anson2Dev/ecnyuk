@@ -46,7 +46,7 @@ export default defineConfig({
               },
             },
             {
-              label: "Register ECNY",
+              label: "Register e-CNY",
               slug: "guides/registerecny",
               translations: {
                 "zh-CN": "注册",
@@ -117,7 +117,7 @@ export default defineConfig({
         {
           icon: "github",
           label: "GitHub",
-          href: "https://github.com/anson2dev/ecny-you-know",
+          href: "https://github.com/anson2dev/ecnyuk",
         },
         { icon: "discord", label: "Discord", href: "https://diccord.com/" },
         { icon: "x.com", label: "X.com", href: "https://x.com/" },
