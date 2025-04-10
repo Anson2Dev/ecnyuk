@@ -1,5 +1,5 @@
 ---
-title: Example Guide
+title: 注册数字人民币
 description: A guide in my new Starlight docs site.
 ---
 

@@ -1,0 +1,3 @@
+# CONTRIBUTING
+English ｜ [中文](CONTRIBUTING_CN.md)
+
